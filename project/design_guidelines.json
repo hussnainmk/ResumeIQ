@@ -1,0 +1,59 @@
+{
+  "app_name": "ResumeIQ",
+  "theme": "light",
+  "archetype": "Swiss & High-Contrast / Soft Utility",
+  "typography": {
+    "heading_font": "Outfit, sans-serif",
+    "body_font": "Plus Jakarta Sans, sans-serif",
+    "mono_font": "JetBrains Mono, monospace"
+  },
+  "colors": {
+    "background": "#F8FAFC",
+    "surface": "#FFFFFF",
+    "border": "#E2E8F0",
+    "primary": "#3B82F6",
+    "primary_gradient": "from-blue-600 to-violet-600",
+    "text_primary": "#0F172A",
+    "text_secondary": "#64748B",
+    "success": "#10B981",
+    "warning": "#F59E0B",
+    "danger": "#EF4444"
+  },
+  "visual_enhancers": {
+    "shadows": "shadow-[0_4px_20px_-4px_rgba(15,23,42,0.06)]",
+    "rounded": "rounded-2xl",
+    "borders": "border border-slate-200/80"
+  },
+  "layouts": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-12 gap-6"
+  },
+  "motion": {
+    "transition": "transition-all duration-200 ease-in-out",
+    "hover": "hover:-translate-y-0.5 hover:shadow-lg"
+  },
+  "accessibility": {
+    "contrast": "APCA AAA compliant, min 4.5:1 text contrast",
+    "focus_states": "focus:ring-2 focus:ring-blue-500 focus:outline-none"
+  },
+  "image_urls": [
+    {
+      "category": "workspace",
+      "description": "Minimalist workspace background",
+      "url": "https://images.unsplash.com/photo-1449247709967-d4461a6a6103?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwd29ya3NwYWNlfGVufDB8fHx8MTc4ODg2NTUzOXww&ixlib=rb-4.1.0&q=85"
+    }
+  ],
+  "instructions_to_main_agent": [
+    "Ensure all interactive elements have data-testid attributes",
+    "Use Light Theme with soft light-blue-grey background (#F8FAFC)",
+    "Implement comprehensive ATS parser, 3-pillar scoring engine (Keyword Match 45%, ATS Parseability 25%, Content Quality 30%), AI insights, full grounded Resume Optimizer, history in MongoDB, analytics dashboard, DOCX and PDF export",
+    "Seed 2 sample analyses for immediate history & dashboard visibility",
+    "Ensure responsive design without fixed sidebar clipping"
+  ],
+  "universal_guidelines": [
+    "Never use full transparent headers without blur or solid background",
+    "Use pill badges, bold sans-serif headings, white rounded cards",
+    "Always set explicit hover and focus text colors",
+    "Include data-testid on all buttons, links, inputs, and score cards"
+  ]
+}
