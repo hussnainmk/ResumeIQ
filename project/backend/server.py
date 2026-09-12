@@ -11,7 +11,8 @@ from collections import Counter
 import os, re, uuid, json, logging
 
 load_dotenv(Path(__file__).parent / '.env')
-client = AsyncIOMotorClient(os.environ['MONGO_URL'])
+import certifi
+client = AsyncIOMotorClient(os.environ['MONGO_URL'], tlsCAFile=certifi.where())
 db = client[os.environ['DB_NAME']]
 app = FastAPI(title='ResumeIQ API')
 api = APIRouter(prefix='/api')
